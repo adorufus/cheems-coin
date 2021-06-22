@@ -10,15 +10,18 @@ interface IERC20 {
     event Transfer(address indexed from, address indexed to, uint256 value);
     event Approval(address indexed owner, address indexed spender, uint256 value);
 }
+
 interface IERC20Metadata is IERC20 {
     function name() external view returns (string memory);
     function symbol() external view returns (string memory);
     function decimals() external view returns (uint8);
 }
+
 abstract contract Context {
     function _msgSender() internal view virtual returns (address) {return msg.sender;}
     function _msgData() internal view virtual returns (bytes calldata) {this; return msg.data;}
 }
+
 library SafeMath {
     function add(uint256 a, uint256 b) internal pure returns (uint256) {return a + b;}
     function sub(uint256 a, uint256 b) internal pure returns (uint256) {return a - b;}
@@ -29,6 +32,7 @@ library SafeMath {
         unchecked { require(b <= a, errorMessage); return a - b; }
     }
 }
+
 library Address {
     function isContract(address account) internal view returns (bool) { uint256 size; assembly { size := extcodesize(account) } return size > 0;}
     function sendValue(address payable recipient, uint256 amount) internal {
@@ -71,6 +75,7 @@ library Address {
         }
     }
 }
+
 abstract contract Ownable is Context {
     address private _owner;
     address private _previousOwner;
@@ -113,6 +118,7 @@ abstract contract Ownable is Context {
         _owner = _previousOwner;
     }
 }
+
 abstract contract Manageable is Context {
     address private _manager;
     event ManagementTransferred(address indexed previousManager, address indexed newManager);
@@ -131,10 +137,12 @@ abstract contract Manageable is Context {
         _manager = newManager;
     }
 }
+
 interface IPancakeV2Factory {
     event PairCreated(address indexed token0, address indexed token1, address pair, uint);
     function createPair(address tokenA, address tokenB) external returns (address pair);
 }
+
 interface IPancakeV2Router {
     function factory() external pure returns (address);
     function WETH() external pure returns (address);
