@@ -1,7 +1,7 @@
 {
   "contractName": "AntiWhale",
   "abi": [],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/I/Development/cheems-coin/src/contracts/abstracts/AAntiWhale.sol\":\"AntiWhale\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/I/Development/cheems-coin/src/contracts/abstracts/AAntiWhale.sol\":{\"keccak256\":\"0x75cf99f6cc9b823fc5b06a519bfb05fdf919bb03ad96eae790997ef031c5b1d8\",\"urls\":[\"bzz-raw://a21ded75e2ceb85fd3d99afa1f5bd29c027b0022dbfa343fc05b52b0bd2aaf8c\",\"dweb:/ipfs/QmYpAK3wZCmEwRT79tc728etAxibyj8FosXg2qMEVd9tv2\"]},\"/I/Development/cheems-coin/src/contracts/abstracts/ATokenomics.sol\":{\"keccak256\":\"0x1a593829cb015261e8cebd01e3b40a61d687baf50b7c516cc8637b368e387521\",\"urls\":[\"bzz-raw://5caf44b9cfd3690f1a710c7145d8bf3f699b0faf9e68a7969ad068407ed1c6b0\",\"dweb:/ipfs/Qmb976hpC3YDQ7s39M8jNV1CBZUY5RZoNB5a8C37ySERMB\"]},\"/I/Development/cheems-coin/src/contracts/abstracts/Cheems-token-imports.sol\":{\"keccak256\":\"0xa25bb3894f3b0b317350bdf1c2d88bb17972b2acb7526851378811f7e58d6224\",\"urls\":[\"bzz-raw://3605052344612b7ce77f5c6bb2a6b97aa3dfea855fc0025cf0892de169b1cc86\",\"dweb:/ipfs/QmNNBRzaFyMzVCq7oYqNVWTq8dSATkutRGD5QkXwwkDPDF\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/W/Development/cheemstoken/src/contracts/abstracts/AAntiWhale.sol\":\"AntiWhale\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/W/Development/cheemstoken/src/contracts/abstracts/AAntiWhale.sol\":{\"keccak256\":\"0x75cf99f6cc9b823fc5b06a519bfb05fdf919bb03ad96eae790997ef031c5b1d8\",\"urls\":[\"bzz-raw://a21ded75e2ceb85fd3d99afa1f5bd29c027b0022dbfa343fc05b52b0bd2aaf8c\",\"dweb:/ipfs/QmYpAK3wZCmEwRT79tc728etAxibyj8FosXg2qMEVd9tv2\"]},\"/W/Development/cheemstoken/src/contracts/abstracts/ATokenomics.sol\":{\"keccak256\":\"0x1a593829cb015261e8cebd01e3b40a61d687baf50b7c516cc8637b368e387521\",\"urls\":[\"bzz-raw://5caf44b9cfd3690f1a710c7145d8bf3f699b0faf9e68a7969ad068407ed1c6b0\",\"dweb:/ipfs/Qmb976hpC3YDQ7s39M8jNV1CBZUY5RZoNB5a8C37ySERMB\"]},\"/W/Development/cheemstoken/src/contracts/abstracts/Cheems-token-imports.sol\":{\"keccak256\":\"0xa25bb3894f3b0b317350bdf1c2d88bb17972b2acb7526851378811f7e58d6224\",\"urls\":[\"bzz-raw://3605052344612b7ce77f5c6bb2a6b97aa3dfea855fc0025cf0892de169b1cc86\",\"dweb:/ipfs/QmNNBRzaFyMzVCq7oYqNVWTq8dSATkutRGD5QkXwwkDPDF\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -10,49 +10,49 @@
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "pragma solidity ^0.8.4;\r\n\r\nimport \"./ATokenomics.sol\";\r\n\r\nabstract contract AntiWhale is Tokenomics {\r\n    function _getAntiwhaleFees(uint256, uint256) internal view returns (uint256) {\r\n        return sumOfFees;\r\n    }\r\n}",
-  "sourcePath": "I:/Development/cheems-coin/src/contracts/abstracts/AAntiWhale.sol",
+  "sourcePath": "W:/Development/cheemstoken/src/contracts/abstracts/AAntiWhale.sol",
   "ast": {
-    "absolutePath": "/I/Development/cheems-coin/src/contracts/abstracts/AAntiWhale.sol",
+    "absolutePath": "/W/Development/cheemstoken/src/contracts/abstracts/AAntiWhale.sol",
     "exportedSymbols": {
       "Address": [
-        3030
+        2880
       ],
       "AntiWhale": [
-        587
+        437
       ],
       "Context": [
-        2652
+        2502
       ],
       "IERC20": [
-        2613
+        2463
       ],
       "IERC20Metadata": [
-        2631
+        2481
       ],
       "IPancakeV2Factory": [
-        3294
+        3144
       ],
       "IPancakeV2Router": [
-        3340
+        3190
       ],
       "Manageable": [
-        3274
+        3124
       ],
       "Ownable": [
-        3205
+        3055
       ],
       "SafeMath": [
-        2747
+        2597
       ],
       "Tokenomics": [
-        2544
+        2394
       ]
     },
-    "id": 588,
+    "id": 438,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 571,
+        "id": 421,
         "literals": [
           "solidity",
           "^",
@@ -63,13 +63,13 @@
         "src": "0:23:3"
       },
       {
-        "absolutePath": "/I/Development/cheems-coin/src/contracts/abstracts/ATokenomics.sol",
+        "absolutePath": "/W/Development/cheemstoken/src/contracts/abstracts/ATokenomics.sol",
         "file": "./ATokenomics.sol",
-        "id": 572,
+        "id": 422,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 588,
-        "sourceUnit": 2545,
+        "scope": 438,
+        "sourceUnit": 2395,
         "src": "27:27:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -79,13 +79,13 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 573,
+              "id": 423,
               "name": "Tokenomics",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 2544,
+              "referencedDeclaration": 2394,
               "src": "89:10:3"
             },
-            "id": 574,
+            "id": 424,
             "nodeType": "InheritanceSpecifier",
             "src": "89:10:3"
           }
@@ -93,10 +93,10 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 587,
+        "id": 437,
         "linearizedBaseContracts": [
-          587,
-          2544
+          437,
+          2394
         ],
         "name": "AntiWhale",
         "nameLocation": "76:9:3",
@@ -104,31 +104,31 @@
         "nodes": [
           {
             "body": {
-              "id": 585,
+              "id": 435,
               "nodeType": "Block",
               "src": "184:35:3",
               "statements": [
                 {
                   "expression": {
-                    "id": 583,
+                    "id": 433,
                     "name": "sumOfFees",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 2370,
+                    "referencedDeclaration": 2220,
                     "src": "202:9:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 582,
-                  "id": 584,
+                  "functionReturnParameters": 432,
+                  "id": 434,
                   "nodeType": "Return",
                   "src": "195:16:3"
                 }
               ]
             },
-            "id": 586,
+            "id": 436,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -136,17 +136,17 @@
             "nameLocation": "116:17:3",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 579,
+              "id": 429,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 576,
+                  "id": 426,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 586,
+                  "scope": 436,
                   "src": "134:7:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -155,7 +155,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 575,
+                    "id": 425,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "134:7:3",
@@ -168,12 +168,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 578,
+                  "id": 428,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 586,
+                  "scope": 436,
                   "src": "143:7:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -182,7 +182,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 577,
+                    "id": 427,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "143:7:3",
@@ -197,17 +197,17 @@
               "src": "133:18:3"
             },
             "returnParameters": {
-              "id": 582,
+              "id": 432,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 581,
+                  "id": 431,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 586,
+                  "scope": 436,
                   "src": "175:7:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -216,7 +216,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 580,
+                    "id": 430,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "175:7:3",
@@ -230,14 +230,14 @@
               ],
               "src": "174:9:3"
             },
-            "scope": 587,
+            "scope": 437,
             "src": "107:112:3",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "internal"
           }
         ],
-        "scope": 588,
+        "scope": 438,
         "src": "58:164:3",
         "usedErrors": []
       }
@@ -245,47 +245,47 @@
     "src": "0:222:3"
   },
   "legacyAST": {
-    "absolutePath": "/I/Development/cheems-coin/src/contracts/abstracts/AAntiWhale.sol",
+    "absolutePath": "/W/Development/cheemstoken/src/contracts/abstracts/AAntiWhale.sol",
     "exportedSymbols": {
       "Address": [
-        3030
+        2880
       ],
       "AntiWhale": [
-        587
+        437
       ],
       "Context": [
-        2652
+        2502
       ],
       "IERC20": [
-        2613
+        2463
       ],
       "IERC20Metadata": [
-        2631
+        2481
       ],
       "IPancakeV2Factory": [
-        3294
+        3144
       ],
       "IPancakeV2Router": [
-        3340
+        3190
       ],
       "Manageable": [
-        3274
+        3124
       ],
       "Ownable": [
-        3205
+        3055
       ],
       "SafeMath": [
-        2747
+        2597
       ],
       "Tokenomics": [
-        2544
+        2394
       ]
     },
-    "id": 588,
+    "id": 438,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 571,
+        "id": 421,
         "literals": [
           "solidity",
           "^",
@@ -296,13 +296,13 @@
         "src": "0:23:3"
       },
       {
-        "absolutePath": "/I/Development/cheems-coin/src/contracts/abstracts/ATokenomics.sol",
+        "absolutePath": "/W/Development/cheemstoken/src/contracts/abstracts/ATokenomics.sol",
         "file": "./ATokenomics.sol",
-        "id": 572,
+        "id": 422,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 588,
-        "sourceUnit": 2545,
+        "scope": 438,
+        "sourceUnit": 2395,
         "src": "27:27:3",
         "symbolAliases": [],
         "unitAlias": ""
@@ -312,13 +312,13 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 573,
+              "id": 423,
               "name": "Tokenomics",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 2544,
+              "referencedDeclaration": 2394,
               "src": "89:10:3"
             },
-            "id": 574,
+            "id": 424,
             "nodeType": "InheritanceSpecifier",
             "src": "89:10:3"
           }
@@ -326,10 +326,10 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 587,
+        "id": 437,
         "linearizedBaseContracts": [
-          587,
-          2544
+          437,
+          2394
         ],
         "name": "AntiWhale",
         "nameLocation": "76:9:3",
@@ -337,31 +337,31 @@
         "nodes": [
           {
             "body": {
-              "id": 585,
+              "id": 435,
               "nodeType": "Block",
               "src": "184:35:3",
               "statements": [
                 {
                   "expression": {
-                    "id": 583,
+                    "id": 433,
                     "name": "sumOfFees",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 2370,
+                    "referencedDeclaration": 2220,
                     "src": "202:9:3",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 582,
-                  "id": 584,
+                  "functionReturnParameters": 432,
+                  "id": 434,
                   "nodeType": "Return",
                   "src": "195:16:3"
                 }
               ]
             },
-            "id": 586,
+            "id": 436,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -369,17 +369,17 @@
             "nameLocation": "116:17:3",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 579,
+              "id": 429,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 576,
+                  "id": 426,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 586,
+                  "scope": 436,
                   "src": "134:7:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -388,7 +388,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 575,
+                    "id": 425,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "134:7:3",
@@ -401,12 +401,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 578,
+                  "id": 428,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 586,
+                  "scope": 436,
                   "src": "143:7:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -415,7 +415,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 577,
+                    "id": 427,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "143:7:3",
@@ -430,17 +430,17 @@
               "src": "133:18:3"
             },
             "returnParameters": {
-              "id": 582,
+              "id": 432,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 581,
+                  "id": 431,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 586,
+                  "scope": 436,
                   "src": "175:7:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -449,7 +449,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 580,
+                    "id": 430,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "175:7:3",
@@ -463,14 +463,14 @@
               ],
               "src": "174:9:3"
             },
-            "scope": 587,
+            "scope": 437,
             "src": "107:112:3",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "internal"
           }
         ],
-        "scope": 588,
+        "scope": 438,
         "src": "58:164:3",
         "usedErrors": []
       }
@@ -483,7 +483,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.1",
-  "updatedAt": "2021-06-21T21:03:55.598Z",
+  "updatedAt": "2021-06-22T07:18:02.103Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

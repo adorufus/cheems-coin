@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Web3 from 'web3'
 import DaiToken from '../abis/DaiToken.json'
-import CheemsToken from '../abis/DappToken.json'
+import CheemsToken from '../abis/CheemsToken.json'
 import TokenFarm from '../abis/TokenFarm.json'
 import Navbar from './Navbar'
 import Main from './Main'
@@ -22,6 +22,8 @@ class App extends Component {
     this.setState({account: accounts[0]})
 
     const networkId = await web3.eth.net.getId()
+
+    console.log(networkId.toString());
 
     //DaiToken init
     const daiTokenData = DaiToken.networks[networkId]
